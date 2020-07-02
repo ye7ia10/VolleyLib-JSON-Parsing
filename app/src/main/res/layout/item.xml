@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <ImageView
+          android:src="@drawable/ic_launcher_background"
+          android:id="@+id/img"
+          android:scaleType="fitXY"
+          android:layout_width="match_parent"
+          android:layout_height="200dp">
+      </ImageView>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16sp"
+          android:layout_below="@+id/img"
+          android:layout_centerHorizontal="true"
+          android:textStyle="bold"
+          android:textColor="@android:color/black"
+          android:layout_margin="10dp"
+          android:id="@+id/txtName"
+          android:text="name">
+      </TextView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Likes : "
+          android:layout_below="@+id/txtName"
+          android:layout_marginLeft="10dp"
+          android:textSize="16sp"
+          android:id="@+id/text2">
+      </TextView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/black"
+          android:layout_toEndOf="@+id/text2"
+          android:layout_below="@+id/txtName"
+          android:layout_marginLeft="10dp"
+          android:textSize="16sp"
+          android:id="@+id/NumLikes">
+      </TextView>
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
